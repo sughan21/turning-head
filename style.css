@@ -1,0 +1,435 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* header */
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+/* search-box */
+.search-box {
+  background-color: black;
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50%;
+}
+
+.search-inp {
+  width: 12rem;
+  height: 100%;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.search-inp input {
+  width: 100%;
+  background-color: black;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 0.89rem;
+}
+
+.search-icon {
+  color: rgb(137, 138, 138);
+  align-self: center;
+}
+
+.social-media {
+  width: 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-media i {
+  cursor: pointer;
+}
+
+.search-inp:hover .search-icon {
+  color: white;
+}
+
+.search-inp:hover {
+  border-bottom: 3px solid white;
+}
+
+.search-inp ::placeholder {
+  color: white;
+}
+
+/* navigation style starts here!!! */
+.navigation-box {
+  width: 100%;
+  height: 5rem;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50%;
+}
+
+.nav-link {
+  width: 18rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link .nav-home {
+  color: rgb(187, 90, 58);
+}
+
+.nav-link a:hover {
+  color: rgb(187, 90, 58);
+}
+
+/* blog-image-box style starts here!!! */
+.blog-container {
+  width: 100%;
+  position: relative;
+}
+
+.blog-image-box {
+  padding-top: 7.5rem;
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.blog-img1,
+.blog-img2,
+.blog-img3 {
+  width: 32.5%;
+}
+
+.blog-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.blog-img1 {
+  width: 32.9%;
+}
+
+.blog-title {
+  width: 99.5%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: -2rem;
+}
+
+.blog-title h2 {
+  width: 32%;
+  height: 5rem;
+  text-align: center;
+  background-color: white;
+  padding: 1rem 0rem;
+}
+
+/* my blog container starts here!!! */
+
+.my-blog-container {
+  width: 100%;
+  padding-top: 7rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.blog-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.blog1 {
+  width: 35rem;
+  border: 1px solid rgb(184, 184, 184);
+  display: flex;
+}
+
+.blog1-img img {
+  height: 100%;
+}
+
+.blog1-cnt {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cnt-title:hover {
+  color: rgb(187, 90, 58);
+}
+
+.cnt-description {
+  line-height: 1.4rem;
+}
+
+.cnt-description:hover {
+  color: rgb(187, 90, 58);
+}
+
+.post-btn {
+  align-self: flex-start;
+  font-size: 1rem;
+  padding: 0.5rem 0.5rem;
+  background-color: rgb(187, 90, 58);
+  color: white;
+  border: 1px solid;
+  border-color: rgb(187, 90, 58);
+}
+
+.post-btn-cnt {
+  width: 35rem;
+}
+
+/* social-media-container style starts here!!! */
+.social-media-container {
+  width: 50%;
+  padding: 0rem 6rem;
+}
+
+.social-box {
+  width: 100%;
+  background-color: rgb(254, 242, 240);
+  padding: 4rem 3rem;
+}
+
+.social-box1 {
+  background-color: rgb(187, 90, 58);
+  width: 100%;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.post-cnt {
+  color: white;
+  font-size: 2.25rem;
+  text-align: center;
+}
+
+.input-email {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-email label {
+  color: white;
+}
+
+.email-inp-field {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid white;
+}
+
+.email-inp-field:hover {
+  border-color: black;
+}
+
+.subscribe {
+  font-size: 1rem;
+  font-weight: 500;
+  align-self: center;
+  padding: 0.5rem 4rem;
+  background-color: white;
+  color: rgb(187, 90, 58);
+  border: 1px solid white;
+}
+
+.subscribe:hover {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+/* social box2 */
+.social-box2 {
+  margin-top: 4rem;
+}
+
+.instagram {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.image-gallery {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.image-flex-box-1 {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.img-fbox1 {
+  width: 50%;
+  position: relative;
+}
+
+.camera-box {
+  width: 100%;
+}
+
+.camera-box img {
+  width: 12.4rem;
+  height: 11rem;
+}
+
+.hover-box1 {
+  line-height: 1.5rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 11rem;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.3);
+}
+
+.img-fbox1:hover .hover-box1 {
+  display: flex;
+}
+
+/* social-media-nav */
+.social-media-nav {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* footer */
+footer {
+  margin-top: 7rem;
+}
+
+.form {
+  background-color: rgb(254, 242, 240);
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-title {
+  font-size: 2.25rem;
+  text-align: center;
+}
+
+.form-box {
+  width: 45rem;
+  padding: 5rem 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.msg-area {
+  resize: none;
+  overflow-y: scroll;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.form-box1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form-input {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-input input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.form-submit-btn {
+  align-self: center;
+  padding: 0.75rem 3.75rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background-color: rgb(187, 90, 58);
+  border: 1px solid rgb(187, 90, 58);
+}
+
+.label:hover .form-input-field {
+  border-bottom: 1px solid rgb(187, 90, 58);
+}
+
+.form-input-field:hover {
+  border-bottom: 1px solid rgb(187, 90, 58);
+}
+
+.copyrights {
+  background-color: rgb(187, 90, 58);
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-cnt a {
+  color: white;
+}
+
+.footer-cnt {
+  color: white;
+}
